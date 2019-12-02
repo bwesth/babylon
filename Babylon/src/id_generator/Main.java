@@ -1,0 +1,9 @@
+package id_generator;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+       new Webserver(Webserver.getPort());
+
+        
+    }
+}
