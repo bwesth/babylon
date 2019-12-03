@@ -1,5 +1,4 @@
 package id_generator;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -11,7 +10,6 @@ public class Database {
     private HashMap<String, Medlem> medlemsListe;
 
     public Database() {
-        medlemsListe = initiateList();
     }
 
     public HashMap<String, Medlem> initiateList() {
@@ -45,20 +43,20 @@ public class Database {
         // sc.close();
     }
 
-    public String generateID(String fornavn, String efternavn) {
+    public static String generateID(String fornavn, String efternavn, ArrayList<String> memberArrayList) {
         String fnavn = fornavn.split(" ")[0];
         String efnavn = efternavn.split(" ")[efternavn.split(" ").length - 1];
         String ID = fnavn.substring(0, 2) + efnavn.substring(0, 2);
-        if (!medlemsListe.containsKey(ID)) {
+        if (!memberArrayList.contains(ID)) {
             return ID.toUpperCase();
         } else if (efnavn.length() > 2) {
             ID = fnavn.substring(0, 1) + efnavn.substring(0, 3);
-            if (!medlemsListe.containsKey(ID)) {
+            if (!memberArrayList.contains(ID)) {
                 return ID.toUpperCase();
             }
         } else if (fnavn.length() > 2) {
             ID = fnavn.substring(0, 3) + efnavn.substring(0, 2);
-            if (!medlemsListe.containsKey(ID)) {
+            if (!memberArrayList.contains(ID)) {
                 return ID.toUpperCase();
             }
         }
@@ -77,5 +75,8 @@ public class Database {
             io.close();
         }
     }
+
+
+
 
 }
