@@ -24,10 +24,12 @@ public class Database {
     }
 
     public void addMember(HttpExchange io) {
-        String[] input = io.getRequestURI().getRawQuery().split("=");
+        String test = io.getRequestURI().getRawQuery();
+        System.out.println(test);
+        // String[] input = io.getRequestURI().getRawQuery().split("=");
         
-        String fornavn = input[1];
-        System.out.println(fornavn);
+        // String fornavn = input[1];
+        // System.out.println(fornavn);
         // String efternavn = sc.nextLine();
         // String fødselsdato = sc.nextLine();
         // String adresse = sc.nextLine();

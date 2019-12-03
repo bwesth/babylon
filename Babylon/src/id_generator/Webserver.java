@@ -38,7 +38,7 @@ public class Webserver {
    * 
    */
   private void setupIO(){
-    httpServer.createContext("/", io -> database.respond(io, 200, "text/html", getFile("web/index.html")));
+    httpServer.createContext("/", io -> database.respond(io, 200, "text/html", getFile("Babylon/web/index.html")));
     httpServer.createContext("/send", io -> database.addMember(io));
   }
 
@@ -49,7 +49,7 @@ public class Webserver {
     // httpServer.createContext("/favicon.ico",
     //     io -> searchEngine.respond(io, 200, "image/x-icon", getFile("web/favicon.ico")));
     httpServer.createContext("/code.js",
-        io -> database.respond(io, 200, "application/javascript", getFile("web/code.js")));
+        io -> database.respond(io, 200, "application/javascript", getFile("Babylon/web/code.js")));
     // httpServer.createContext("/style.css", io -> database.respond(io, 200, "text/css", getFile("style.css")));
   }
 

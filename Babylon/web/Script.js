@@ -2,7 +2,6 @@
 //
 
 
-
 const init = function () {
     document.getElementById('button-cancel').addEventListener('click', reset);
     document.getElementById('button-send').addEventListener('click', send);
@@ -82,7 +81,16 @@ const send = function (ev) {
     ev.stopPropagation();
     let fails = validate();
     if (fails.length === 0) {
-        fetch("/send?q=" + document.getElementById('input-fornavn').value+"="+document.getElementById('input-efternavn').value)
+        fetch("/send?q="
+        +document.getElementById('input-fornavn').value
+        +"="+document.getElementById('input-efternavn').value
+        +"="+document.getElementById('input-fødselsdag').value
+        +"="+document.getElementById('input-adresse').value
+        +"="+document.getElementById('input-postnummer').value
+        +"="+document.getElementById('input-by').value
+        +"="+document.getElementById('input-indmeldingsdato').value
+        +"="+document.getElementById('input-telefonnummer').value
+        +"="+document.getElementById('input-email').value)
         .then(response => response.json());
     } else {
         fails.forEach(function(obj){
