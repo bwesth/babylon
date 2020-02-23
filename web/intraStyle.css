@@ -1,0 +1,186 @@
+*,
+*::after,
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    background-color: #D0CBC7;
+
+}
+
+h1 {
+    margin: 1rem 2rem;
+}
+
+
+/* Header/Navigation */
+
+#header {
+height: 10%;
+min-width: 50px;
+width: 100%;
+}
+
+.navblock {
+    position: fixed;
+    top: 0;
+    float: left;
+    height: 100%; 
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 55px;
+    align-items: center;
+    background: #3F526E;
+    border: 3px solid #EBF2FC;
+    box-sizing: border-box;
+}
+
+#navmain {
+    width: 10%;
+}
+
+#navmember {
+    width: 18%;
+}
+
+#naveco {
+    width: 18%;
+}
+
+#navhold {
+    width: 18%;
+}
+
+#navsched {
+    width: 18%;
+}
+
+#navlogout {
+    width: 18%;
+}
+
+
+
+
+
+/* forms */
+form {
+    margin: 2rem;
+    width: 800px;
+    background: #D0CBC7;
+    border: 5px solid #3F526E;
+    box-sizing: border-box;
+}
+
+.form-box {
+    padding: 1rem;
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+
+.form-box label {
+    font-size: 1rem;
+    float: left;
+    width: 100px;
+    margin-right: 20px;font-family: Spectral;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #3F526E;
+}
+
+.form-box input {
+    font-size: 1rem;
+    width: 300px;
+    padding: 0.25rem 1rem;
+    background: #EBF2FC;
+    border: 1px solid #3F526E;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: normal;
+    align-items: center;
+    text-align: center;
+    color: #3F526E;
+}
+
+.form-box select {
+    font-size: 1rem;
+    width: 300px;
+    padding: 0.25rem 1rem;
+    background: #EBF2FC;
+    border: 1px solid #3F526E;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: normal;
+    align-items: center;
+    text-align: center;
+    color: #3F526E;
+}
+
+.form-box option {
+    font-size: 1rem;
+    width: 300px;
+    padding: 0.25rem 1rem;
+}
+
+.form-box input[type="checkbox"] {
+    font-size: 1rem;
+}
+
+.form-box button {
+    font-size: 1rem;
+    border: none;
+    padding: 0.25rem 2rem;
+    margin-right: 1rem;
+    color: white;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.error::after {
+    background-color: hsl(10, 60%, 50%);
+    color: papayawhip;
+    font-size: 1rem;
+    line-height: 1.8;
+    width: 350px;
+    padding-left: 1rem;
+    position: absolute;
+    right: 0;
+    content: attr(data-errormsg);
+}
+
+#daySubfield {
+    width: 101px;
+    height: 44px;
+    float: left;
+}
+
+#monthSubfield {
+    width: 150px;
+    float: left;
+}
+
+#yearSubfield {
+    width: 101px;
+    height: 44px;
+    float: left;
+}
+

@@ -2,10 +2,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Mariadb",
+            "request": "launch",
+            "mainClass": "id_generator.Mariadb",
+            "projectName": "ID generator"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
             "mainClass": "id_generator.Main",
-            "projectName": "babylon_92fd41e4"
+            "projectName": "ID generator"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "id_generator.App",
+            "projectName": "ID generator"
         }
     ]
 }
