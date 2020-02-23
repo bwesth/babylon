@@ -11,38 +11,61 @@ body {
     width: 100%;
 }
 
+nav {
+    height: 100%;
+    width: 100%;
+    background-color: #EBF2FC;
+}
+
 html {
     background-color: #D0CBC7;
-
+    height: 100%;
+    width: 100%;
 }
 
-h1 {
+.rounded {
+    border-radius: 10%;
+}
+
+.lightborder {
+border: 3px solid #EBF2FC;
+}
+
+/* h1 {
     margin: 1rem 2rem;
-}
+} */
 
-
+/* Main page start */
 /* Header/Navigation */
 
 #header {
-height: 10%;
+position: fixed;
+height: 15%;
 min-width: 50px;
 width: 100%;
 }
 
 .navblock {
-    position: fixed;
     top: 0;
     float: left;
     height: 100%; 
+    align-items: center;
+    background: #3F526E;
+}
+
+.navblock p {
     font-family: Spectral;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 55px;
-    align-items: center;
-    background: #3F526E;
-    border: 3px solid #EBF2FC;
-    box-sizing: border-box;
+    font-size: 2.5vw;
+    line-height: normal;
+    vertical-align: auto;
+    text-align: center;
+    color: #EBF2FC;
+    position: relative;;
+    top: 30%;
+    bottom: 30%;
+    overflow: hidden;
 }
 
 #navmain {
@@ -71,7 +94,47 @@ width: 100%;
 
 
 
+/* quickmenu */
+#quickmenu {
+    width: 10%;
+    height: 75%;
+    position: fixed;
+    top: 15%;
+    left: 0;
+    background-color: #EBF2FC;
+}
 
+
+/* iframe */
+#iframe {
+    width: 72%;
+    height: 75%;
+    position: fixed;
+    left: 10%;
+    top: 15%;
+}
+
+/* newsfeed */
+
+#newsfeed {
+    width: 18%;
+    height: 75%;
+    position: fixed;
+    right: 0;
+    top: 15%;
+    background-color: #EBF2FC;
+}
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: #3F526E;
+}
+
+/* Main page ends */
 
 /* forms */
 form {
@@ -79,7 +142,6 @@ form {
     width: 800px;
     background: #D0CBC7;
     border: 5px solid #3F526E;
-    box-sizing: border-box;
 }
 
 .form-box {
