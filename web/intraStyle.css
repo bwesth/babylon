@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Spectral;
 }
 
 body {
@@ -35,8 +36,8 @@ border: 3px solid #EBF2FC;
     margin: 1rem 2rem;
 } */
 
-/* Main page start */
-/* Header/Navigation */
+/* ############Main page start############################## */
+/* ############Header/Navigation############################## */
 
 #header {
 position: fixed;
@@ -54,7 +55,6 @@ width: 100%;
 }
 
 .navblock p {
-    font-family: Spectral;
     font-style: normal;
     font-weight: normal;
     font-size: 2.5vw;
@@ -94,7 +94,7 @@ width: 100%;
 
 
 
-/* quickmenu */
+/* ############quickmenu############################## */
 #quickmenu {
     width: 10%;
     height: 75%;
@@ -105,7 +105,7 @@ width: 100%;
 }
 
 
-/* iframe */
+/* ############iframe############################## */
 #iframe {
     width: 72%;
     height: 75%;
@@ -114,7 +114,7 @@ width: 100%;
     top: 15%;
 }
 
-/* newsfeed */
+/* ############newsfeed############################## */
 
 #newsfeed {
     width: 18%;
@@ -134,9 +134,9 @@ width: 100%;
     background-color: #3F526E;
 }
 
-/* Main page ends */
+/* ############Main page ends############################## */
 
-/* forms */
+/* ################forms############################## */
 form {
     margin: 2rem;
     width: 800px;
@@ -155,7 +155,7 @@ form {
     font-size: 1rem;
     float: left;
     width: 100px;
-    margin-right: 20px;font-family: Spectral;
+    margin-right: 20px;
     font-style: normal;
     font-weight: normal;
     display: flex;
@@ -173,7 +173,6 @@ form {
     border: 1px solid #3F526E;
     box-sizing: border-box;
     border-radius: 30px;
-    font-family: Spectral;
     font-style: normal;
     font-weight: normal;
     align-items: center;
@@ -189,7 +188,7 @@ form {
     border: 1px solid #3F526E;
     box-sizing: border-box;
     border-radius: 30px;
-    font-family: Spectral;
+
     font-style: normal;
     font-weight: normal;
     align-items: center;
@@ -246,3 +245,96 @@ form {
     float: left;
 }
 
+/* ###############login############################## */
+
+
+#login {
+    margin: 0;
+    position: absolute;
+    height: fit-content;
+    width: 25%;
+    /* min-width: 320px;
+    min-height: 240px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #DDAF7D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;    
+    background-color: #3F526E;
+}
+
+/* #login p {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vw;
+    position: relative;
+    color: #EBF2FC;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+} */
+
+#inputwrapper {
+    position: relative;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+.inputfield {
+    position: relative;
+}
+
+
+.inputfield  label{
+    
+    position: relative;
+    top:50%;
+    left: 10%;
+    font-size: 1.7vw;
+    width: 80%;
+    padding: 0.25rem 1rem;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: normal;
+    align-items: center;
+    text-align: center;
+    color: #EBF2FC;
+    display: block;
+}
+
+.inputfield input{
+    position: relative;
+    left: 10%;
+    font-size: 1.7vw;
+    width: 80%;
+    padding: 0.25rem 1rem;
+    background: #EBF2FC;
+    border: 1px solid #3F526E;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: normal;
+    align-items: center;
+    text-align: center;
+    color: #3F526E;
+    display: flex;
+    justify-content: center;
+}
+
+#loginbutton {
+    left: 20%;
+    position: relative;
+    font-size: 1.7vw;
+    width: 60%;
+    border-radius: 30px;
+    cursor: pointer;    
+}
+
+.buttonwrapper {
+    padding-top: 5%;
+}

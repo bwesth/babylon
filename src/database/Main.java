@@ -22,7 +22,7 @@ public class Main {
         verifyDriver();
 
         // Open connection
-        Connection conn = DB.getConnection();
+        Connection conn = Database.getConnection();
         
         // It works!
         System.out.println("Everything seems to work!");

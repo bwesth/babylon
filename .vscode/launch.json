@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Webserver",
+            "request": "launch",
+            "mainClass": "server.Webserver",
+            "projectName": "ID generator"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Mariadb",
             "request": "launch",
             "mainClass": "id_generator.Mariadb",
