@@ -1,3 +1,4 @@
+package intranet;
 
 
 public interface Injection {
