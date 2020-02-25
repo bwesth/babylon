@@ -1,6 +1,3 @@
-package server;
-
-import database.*;
 
 import java.io.IOException;
 import java.util.ArrayList;

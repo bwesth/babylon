@@ -28,12 +28,65 @@
 //         });
 // };
 
-document.getElementById('loginbutton').onclick = () => {
-    fetch("/login?u="+ document.getElementById('username').value+"p="+document.getElementById('password'))
-    .then((response) => response.json())
-    .then((data) => {
-        if (data===1) {
-            window.location.replace("index.html")
-        }
-        });
+const login = function(){
+    window.location.replace("index.html")
+}
+
+const button = document.getElementById('loginbutton');
+button.onclick = function(){
+    window.location.replace("index.html")
 };
+
+// Using .replace in order to prevent unwanted logouts due to misclick on mouse
+// document.getElementById('loginbutton').onclick = () => {
+    // fetch("/login?u="+ document.getElementById('username').value+"p="+document.getElementById('password'))
+    // .then((response) => response.json())
+    // .then((data) => {
+    //     if (data===1) {
+            // window.location.replace("index.html")
+        // }
+        // });
+// };
+
+const inputpass = document.getElementById('input-password');
+inputpass.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById('searchbutton').click();
+    };
+});
+
+const inputname = document.getElementById('input-username');
+inputname.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById('searchbutton').click();
+    };
+});
+
+
+// main index
+const iframe = document.getElementById("iframe");
+const navmain = document.getElementById('navmain');
+
+const navmember = document.getElementById('navmember');
+navmember.onclick = function() {
+    iframe.setAttribute("src", "members.html");
+};
+
+const naveco = document.getElementById('naveco');
+naveco.onclick = function() {
+    iframe.setAttribute("src", "economics.html");
+};
+
+const navhold = document.getElementById('navhold');
+navhold.onclick = function() {
+    iframe.setAttribute("src", "holdings.html");
+};
+
+const navsched = document.getElementById('navsched');
+navsched.onclick = function() {
+    iframe.setAttribute("src", "schedule.html");
+};
+
+const navlogout = document.getElementById('navlogout');

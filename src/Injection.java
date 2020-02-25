@@ -1,4 +1,3 @@
-package database;
 
 
 public interface Injection {
