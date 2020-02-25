@@ -27,27 +27,39 @@ public class Webserver {
         importWebCode();
         httpServer.start();
         printServerInit();
-        System.out.println(Timer.getInstance().ElapsedTime());
+        System.out.println("Server started in "+Timer.getInstance().ElapsedTime()+" seconds");
         System.out.println("Used memory: " + ((Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024/1024));
     }
-
-    private void setupIO() {
-        // httpServer.createContext("/search", io -> responder.search(io));
-        httpServer.createContext("/login", io -> responder.login(io));
-      }
     
       /**
        * Creates context for importing favicon, javascript and css style files.
        */
       private void importWebCode() {
-        httpServer.createContext("/", io -> responder.respond(io, 200, "text/html", getFile("web/login.html")));
-        httpServer.createContext("/favicon.ico",
-            io -> responder.respond(io, 200, "image/x-icon", getFile("web/favicon.ico")));
+        httpServer.createContext("/",
+            io -> responder.respond(io, 200, "text/html", getFile("web/login.html")));
+        httpServer.createContext("/index",
+            io -> responder.respond(io, 200, "text/html", getFile("web/index.html")));
+        httpServer.createContext("/personalMenu",
+            io -> responder.respond(io, 200, "text/html", getFile("web/personalMenu.html")));
+        httpServer.createContext("/members",
+            io -> responder.respond(io, 200, "text/html", getFile("web/members.html")));
+        httpServer.createContext("/economics",
+            io -> responder.respond(io, 200, "text/html", getFile("web/economics.html")));
+        httpServer.createContext("/fav.ico",
+            io -> responder.respond(io, 200, "image/x-icon", getFile("web/fav.ico")));
         httpServer.createContext("/code.js",
             io -> responder.respond(io, 200, "application/javascript", getFile("web/code.js")));
-        httpServer.createContext("/style.css", io -> responder.respond(io, 200, "text/css", getFile("web/intraStyle.css")));
+        httpServer.createContext("/intraStyle.css",
+            io -> responder.respond(io, 200, "text/css", getFile("web/intraStyle.css")));
       }
-    
+
+      private void setupIO() {
+        // httpServer.createContext("/search", io -> responder.search(io));
+        httpServer.createContext("/login", io -> responder.login(io));
+      }
+
+
+
       /**
        * Prints message after initialization including link to server site.
        */

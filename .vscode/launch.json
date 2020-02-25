@@ -5,6 +5,13 @@
             "name": "CodeLens (Launch) - Webserver",
             "request": "launch",
             "mainClass": "intranet.Webserver",
+            "projectName": "intranet"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Webserver",
+            "request": "launch",
+            "mainClass": "intranet.Webserver",
             "projectName": "ID generator"
         },
         {

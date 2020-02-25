@@ -28,13 +28,13 @@
 //         });
 // };
 
-const login = function(){
+const login = () => {
     window.location.replace("index.html")
 }
 
 const button = document.getElementById('loginbutton');
 button.onclick = function(){
-    window.location.replace("index.html")
+    window.location.href ="index.html"
 };
 
 // Using .replace in order to prevent unwanted logouts due to misclick on mouse
@@ -66,12 +66,17 @@ inputname.addEventListener("keyup", function (event) {
 
 
 // main index
-const iframe = document.getElementById("iframe");
+const iframe = document.getElementById('iframe');
 const navmain = document.getElementById('navmain');
 
 const navmember = document.getElementById('navmember');
 navmember.onclick = function() {
-    iframe.setAttribute("src", "members.html");
+    iframe.setAttribute("src", 'members.html');
+};
+
+const test = document.getElementById('test');
+navmember.onclick = function() {
+    iframe.setAttribute("src", 'members.html');
 };
 
 const naveco = document.getElementById('naveco');
